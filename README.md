@@ -86,12 +86,12 @@
 
 ### Cosmos 1.0.6 版本
 
-### 新增
+#### 新增
 
 1. 支持导入GPX(GPS eXchange Format)、Garmin TCX(Training Center Database)文件；
 2. 支持将数据保存为geojson文件格式；
 3. 属性面板新增应用按钮。
 
-### 改变
+#### 改变
 
 1. 将鼠标左键单击树形节点飞向目标区域更改为鼠标左键双击树形节点飞向目标区域。
