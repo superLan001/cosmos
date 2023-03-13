@@ -1,0 +1,308 @@
+html,body
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../public/iconfont/font/iconfont.woff2?t=1629427742310') format('woff2'),
+         url('../public/iconfont/font/iconfont.woff?t=1629427742310') format('woff'),
+         url('../public/iconfont/font/iconfont.ttf?t=1629427742310') format('truetype');
+}
+
+.iconfont-one {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-size: 24px;
+    color: #b2b4b4;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+}
+.content 
+{
+    height: calc(100% - 22px);
+}
+.content .left
+{
+    float: left;
+    width: 48px;
+    height: 100%;
+    background-color: #2c2c2c;
+}
+.content .left ul{
+    list-style: none;
+}
+
+.content .left .left-iconfont{
+    padding: 0 12px;
+    line-height: 54px;
+}
+
+.content .left .left-iconfont:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.content .left ul li
+{
+    position: relative;
+    width: 100%;
+    height: 54px;
+}
+
+.content .right
+{
+    float: right;
+    width: calc(100% - 48px);
+    /* width: calc(100% - 10%); */
+    height: 100%;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.content .right .left-content 
+{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+
+.content .right .left-content .right-border
+{
+    position: absolute;
+    right: -5px;
+    height: 100%;
+    width: 5px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.content .right .left-content .right-border:hover
+{
+    cursor: e-resize;
+    background-color: #0090F1;
+}
+
+.content .right .left-content .content-top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    background-color: #F0F0F0;
+}
+
+.content .right .left-content .content-top span{
+    float: left;
+    font-size: 12px;
+    /* color: #6f6f6f; */
+    color: black;
+}
+
+.content .right .left-content .content-top ul{
+    float: right;
+    list-style: none;
+    height: 100%;
+}
+
+.content .right .left-content .content-top ul .content-top-iconfont{
+    padding: 0;
+    line-height: 30px;
+}
+.content .right .left-content .content-top ul li{
+    float: left;
+    width: 30px;
+    height: 100%;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.content .right .left-content .content-top ul li:hover{
+    color: #2b85e4;
+}
+
+.content .right .left-content .content-bottom {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow: auto;
+  }
+
+.content .right .right-content 
+{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: dimgrey;
+}
+
+.content .right .right-content #cesiumContainer 
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.content .right .right-status 
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+     /* height: 290px; */
+}
+.content .right .right-status .bottom-border
+{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    /* background-color: #f3f3f3; */
+    /* border-top: 2px #dcdee2 solid; */
+}
+.content .right .right-status .bottom-border:hover 
+{
+    cursor: n-resize;
+    background-color: #0090F1;
+}
+
+.content .right .status-top {
+    height: 26px;
+    width: 100%;
+    line-height: 26px;
+    background: #f3f3f3;
+    border-bottom: 1px #dcdee2 solid;
+    font-size: 13px;
+    color: #717171;
+}
+
+.content .right .status-top span {
+    padding: 0 20px;
+    border-right: 1px #666769 solid;
+  }
+  
+.content .status-top .top-right {
+    float: right;
+}
+
+.content .status-top .top-right ul {
+    list-style: none;
+}
+
+.content .status-top .top-right ul li {
+    float: left;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.content .status-top .top-right ul li:hover {
+    color: #2b85e4;
+}
+
+.content .right .status-content {
+    height: calc(100% - 30px);
+    overflow: auto;
+}
+.status-content ul{
+   padding: 5px;
+}
+
+.status-content ul li {
+    font-size: 16px;
+    color: black;
+}
+
+.floor
+{
+    height: 22px;
+    background: #212836;
+}
+
+.floor .right{
+    float: right;
+    height: 100%;
+    width: 455px;
+    margin-right: 10px;
+}
+
+.floor .right ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.floor .right ul li{
+    float: left;
+    width: 33%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    white-space:nowrap;
+    overflow:hidden;
+    color: white;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.floor .left{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.floor .floor-left-icon{
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    font-size: 20px;
+    transform:translateY(-50%);
+}
+
+.floor .floor-left-content{
+    position: absolute;
+    left: 25px;
+    height: 100%;
+    width: calc(100% - 25px);
+    line-height: 22px;
+}
+
+.floor .floor-left-status-name{
+    display: inline-block;
+    height: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+.floor .floor-left-status-content{
+    display: inline-block;
+    height: 100%;
+    font-size: 15px;
+    color: white;
+}

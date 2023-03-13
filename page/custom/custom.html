@@ -1,0 +1,90 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-12-07 09:42:54
+ * @FilePath: \Cosmos\page\custom\custom.html
+ * @LastEditTime: 2021-12-07 19:35:14
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="./custom.css" />
+</head>
+<body>
+    <div class="box-top">
+        <div class="form-item">
+            <input id="path" type="button" class="btn-default" style="float: right; height: 20px;margin-top: 3px;" value="选择文件" />
+            <div class="form-item-content" style="margin-right: 80px;">
+                <div class="input">
+                    <input autocomplete="off" disabled class="input-inner" placeholder="注意：文件内容请用逗号或空格隔开！" style="height: 26px; line-height: 26px;" id="customPath">
+                </div>
+            </div>
+        </div>
+        <div class="box" style="padding-top: 5px;height: 420px;overflow-y: auto;">
+            <table class="table-default">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>
+                            <select class="select" id="select-one">
+                                <option disabled selected hidden>请选择</option>
+                                <option value="1">名称</option>
+                                <option value="2">经度（度）</option>
+                                <option value="3">纬度（度）</option>
+                                <option value="4">高度（米）</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="select" id="select-two">
+                                <option disabled selected hidden>请选择</option>
+                                <option value="1">名称</option>
+                                <option value="2">经度（度）</option>
+                                <option value="3">纬度（度）</option>
+                                <option value="4">高度（米）</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="select" id="select-three">
+                                <option disabled selected hidden>请选择</option>
+                                <option value="1">名称</option>
+                                <option value="2">经度（度）</option>
+                                <option value="3">纬度（度）</option>
+                                <option value="4">高度（米）</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="select" id="select-four">
+                                <option disabled selected hidden>请选择</option>
+                                <option value="1">名称</option>
+                                <option value="2">经度（度）</option>
+                                <option value="3">纬度（度）</option>
+                                <option value="4">高度（米）</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+            </table>
+        </div>
+        <div class="form-item" style="margin-top: 15px;">
+            <label class="form-item-label" style="width: 95px;">矢量图形类型</label>
+            <div class="form-item-content" style="margin-left: 95px;">
+                <select class="select" id="select-type">
+                    <option value="0" selected>点</option>
+                    <option value="1">多段线</option>
+                    <option value="2">多边形</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">取消</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">确定</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./custom.js"></script>
+</body>
+</html>

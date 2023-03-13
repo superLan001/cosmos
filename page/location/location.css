@@ -1,0 +1,89 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.form-item{
+    margin-bottom: 8px;
+}
+
+.form-item-label{
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #000000;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.form-item-content{
+    /* line-height: 30px; */
+    position: relative;
+    font-size: 14px;
+}
+
+.co-input-number{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 25px;
+}
+
+.co-input-number-decrease{
+    left: 1px;
+    border-right: 1px solid #dcdfe6;
+}
+
+.co-input-number-increase{
+    right: 1px;
+    border-left: 1px solid #dcdfe6;
+}
+
+.co-input-number-public{
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    background: #f5f7fa;
+    color: #606266;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.co-input-number-public:hover{
+    background:#dcdfe6;
+}
+
+.co-input{
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
+
+.co-input-inner{
+    background-color: #fff;
+    text-align: center;
+    background-image: none;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 27px;
+    line-height: 27px;
+    outline: none;
+    padding: 0 30px;
+    width: 100%;
+}

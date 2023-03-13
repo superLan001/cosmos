@@ -1,0 +1,104 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: main page
+ * @Date: 2021-08-17 11:12:21
+ * @FilePath: \Cosmos\main\index.html
+ * @LastEditTime: 2023-03-06 13:19:48
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/css/public.css" />
+    <link rel="stylesheet" href="../public/iconfont/font/iconfont.css">
+    <link rel="stylesheet" href="../node_modules/jstree/dist/themes/default/style.min.css" />
+    <link rel="stylesheet" href="../node_modules/cesium/Build/Cesium/Widgets/widgets.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="content">
+        <div class="left">
+          <ul>
+            <li title="资源管理器(Alt+Ctrl+E)" id="project">
+              <span class="iconfont-one left-iconfont">&#xe767;</span>
+            </li>
+            <li title="搜索(Alt+Ctrl+F)" id="search">
+              <span class="iconfont-one left-iconfont">&#xe766;</span>
+            </li>
+            <li title="测量距离(Alt+Ctrl+D)" id="ruler">
+              <span class="iconfont-one left-iconfont" style="font-size: 27px;">&#xe768;</span>
+            </li>
+            <li title="绘制点(Alt+Ctrl+M)" id="point">
+              <span class="iconfont-one left-iconfont" style="font-size: 27px;">&#xe608;</span>
+            </li>
+            <li title="绘制线段(Alt+Ctrl+L)" id="polyline">
+              <span class="iconfont-one left-iconfont">&#xe60a;</span>
+            </li>
+            <li title="绘制多边形(Alt+Ctrl+P)" id="polygon">
+              <span class="iconfont-one left-iconfont">&#xe76b;</span>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <!-- 资源数据 -->
+          <div class="left-content" id="left-content-project" style="display: none;">
+            <div class="right-border" id="right-border"></div>
+            <div class="content-top">
+              <span>资源管理器</span>
+              <ul>
+                <li class="iconfont-one content-top-iconfont" title="打开" id="openProject">&#xe637;</li>
+                <li class="iconfont-one content-top-iconfont" id='project-close' style="font-size: 24px;" title="关闭">&#xe6c9;</li>
+              </ul>
+            </div>
+            <div class="content-bottom">
+              <div id="jstree" style="padding-top: 10px;"></div>
+            </div>
+          </div>
+
+          <div class="right-content">
+            <div id="cesiumContainer"></div>
+            <div class="right-status" id="bottom-status" style="display: none;">
+              <div class="bottom-border" id="bottom-border"></div>
+              <div class="status-top">
+                <span>状态信息</span>
+                <div class="top-right">
+                  <ul>
+                    <li title="清除" class="iconfont-one content-top-iconfont" id="bottom-status-clear">&#xe68a;</li>
+                    <li title="关闭" class="iconfont-one content-top-iconfont" id="bottom-status-close" style="font-size: 24px;">&#xe6c9;</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="status-content" id="status-content">
+                <ul id="bottom-status-content"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floor">
+        <div class="left">
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <span id="lng"></span>
+            </li>
+            <li>
+              <span id="lat"></span>
+            </li>
+            <li>
+              <span id="alt"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script src="../node_modules/cesium/Build/Cesium/Cesium.js"></script>
+    <script src="../public/js/viewerCesiumNavigationMixin.js"></script>
+    <script type="module" src="./code/cesiumSet.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

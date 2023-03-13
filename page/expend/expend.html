@@ -1,0 +1,37 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-08-31 10:42:45
+ * @FilePath: \Cosmos\page\expend\expend.html
+ * @LastEditTime: 2021-12-10 17:17:46
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="./expend.css" />
+</head>
+<body>
+    <div class="box-top">
+        <div class="box">
+            <div class="form-item">
+                <label class="form-item-label" style="width: 40px;">距离</label>
+                <div class="form-item-content" style="margin-left: 40px;">
+                    <div class="input">
+                        <input type="number" autocomplete="off" class="input-inner" id="expend" placeholder="单位:km">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">取消</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">确定</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./expend.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "id": "2923845",
+  "name": "cosmos",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2218676",
+      "name": "尺子",
+      "font_class": "ruler",
+      "unicode": "e768",
+      "unicode_decimal": 59240
+    },
+    {
+      "icon_id": "519403",
+      "name": "分享-线性",
+      "font_class": "fenxiangxianxing",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5203305",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "17099789",
+      "name": "3.0-搜索",
+      "font_class": "sousuo-copy",
+      "unicode": "e766",
+      "unicode_decimal": 59238
+    },
+    {
+      "icon_id": "17099820",
+      "name": "图层筛选",
+      "font_class": "tucengshaixuan-copy",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "17099859",
+      "name": "多边形",
+      "font_class": "duobianxing-copy",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "17984171",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "18693022",
+      "name": "清除",
+      "font_class": "qingchu",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "11459728",
+      "name": "图钉",
+      "font_class": "tuding",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    }
+  ]
+}

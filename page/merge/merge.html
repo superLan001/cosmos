@@ -1,0 +1,33 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-09-06 09:08:03
+ * @FilePath: \Cosmos\page\merge\merge.html
+ * @LastEditTime: 2022-03-09 09:49:40
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="../../node_modules/jstree/dist/themes/default/style.min.css" />
+    <link rel="stylesheet" href="./merge.css" />
+</head>
+<body>
+    <div class="box-top">
+        <div class="box" style="height: 140px;">
+            <label class="box-name" style="width: 100px; left:10px;">请选择合并区域</label>
+            <div style="overflow-y: auto; height: 100%;">
+                <div id="jstree"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">取消</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">确定</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./merge.js"></script>
+</body>
+</html>

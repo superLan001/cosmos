@@ -1,0 +1,166 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-09-01 14:05:22
+ * @FilePath: \Cosmos\page\nature\nature.html
+ * @LastEditTime: 2022-01-12 17:00:11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="./nature.css" />
+    <title>属性</title>
+</head>
+<body>
+    <div class="box-top">
+        <div class="form-item">
+            <label class="form-item-label" style="width: 40px; height: 30px; line-height: 30px;">名称</label>
+            <div class="form-item-content" style="margin-left: 40px;">
+                <div class="input">
+                    <input autocomplete="off" class="input-inner" style="height: 30px; line-height: 30px;" id="name">
+                </div>
+            </div>
+        </div>
+
+        <div class="widget">
+            <ol class="widget-list" id="height">
+               <div class="widget-box">
+                <div class="form-item" style="margin-top: 25px;">
+                    <select class="select" id="select">
+                        <option value="0" selected>海拔高度</option>
+                        <option value="1">贴近地面</option>
+                    </select>
+                </div>
+
+                <div class="form-item" style="margin-top: 25px;">
+                    <label class="form-item-label" style="width: 70px;">海拔高度</label>
+                    <div class="form-item-content" style="margin-left: 70px;">
+                        <div class="input">
+                            <input type="number" autocomplete="off" class="input-inner" placeholder="单位:m" id="elevation">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item" style="margin-top: 30px;" id="subset-box">
+                    <label class="form-item-label" style="width: 155px;">高程设置是否作用子集</label>
+                    <div class="form-item-content" style="margin-left: 155px;">
+                        <div class="input">
+                            <div class="radio">
+                                <input name="subset" type="radio" value="0" checked>
+                                <label class="radio-label">否</label>
+                            </div>
+                            <div class="radio">
+                                <input name="subset" type="radio" value="1">
+                                <label class="radio-label">是</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+            </ol>
+
+            <ol class="widget-list" id="color">
+                <div class="widget-box">
+                    <div class="box" style="margin-top: 20px;" id="outline-box">
+                        <label class="box-name" style="width: 90px; left:15px;">轮廓线</label>
+                        <div class="form-item">
+                            <label class="form-item-label" style="width: 70px;">颜色</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="color" class="input-inner" id="outline-color">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-item-label" style="width: 70px;">宽度</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="number" autocomplete="off" class="input-inner" id="outline-width" oninput="if(value<0)value=0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-item-label" style="width: 70px;">透明度</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="number" autocomplete="off" class="input-inner" placeholder="单位:%" id="outline-alpha" oninput="if(value>100)value=100;if(value<0)value=0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box" style="margin-top: 20px;">
+                        <label class="box-name" style="width: 90px; left:15px;">填充</label>
+                        <div class="form-item">
+                            <label class="form-item-label" style="width: 70px;">颜色</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="color" class="input-inner" id="material-color">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item" id="width-item">
+                            <label class="form-item-label" style="width: 70px;">宽</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="number" autocomplete="off" class="input-inner" id="width" oninput="if(value<0)value=0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item" id="size-item">
+                            <label class="form-item-label" style="width: 70px;">尺寸</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="number" autocomplete="off" class="input-inner" placeholder="单位:像素" id="pixelSize" oninput="if(value<0)value=0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-item-label" style="width: 70px;">透明度</label>
+                            <div class="form-item-content" style="margin-left: 70px;">
+                                <div class="input">
+                                    <input type="number" autocomplete="off" class="input-inner" placeholder="单位:%" id="material-alpha" oninput="if(value>100)value=100;if(value<0)value=0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+
+            <ol class="widget-list" id="message">
+                <div class="widget-box">
+                    <ul id="bottom-status-content"></ul>
+                </div>
+            </ol>
+
+            <ul class="widget-tabs">
+                <li class="widget-tab" id="height-li">
+                    <a href="#height" class="widget-tab-link">海拔高度</a>
+                </li>
+                <li class="widget-tab" id="color-li">
+                    <a href="#color" class="widget-tab-link">样式/颜色</a>
+                </li>
+                <li class="widget-tab" >
+                    <a href="#message" class="widget-tab-link">说明</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">取消</button>
+        <button class="btn-default" id="apply" style="float: right; margin-right: 10px;margin-top: 11px;">应用</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">确定</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./nature.js"></script>
+</body>
+</html>

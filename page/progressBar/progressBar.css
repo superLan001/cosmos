@@ -1,0 +1,57 @@
+html,body
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f9;
+}
+ 
+.skillbar{
+     width:100%;
+     padding:10px;
+     position:relative;
+     display:block;
+     overflow:hidden;
+     height:30px;
+     background-color:#fff;
+     border: 1px solid #DCDFE6;
+}
+
+.skillbar.html .title{
+    background-color:#19be6b
+}
+
+.skillbar.html .filled{
+    background-color:#19be6b
+}
+
+.skillbar .title{
+    background-color:rgba(0,0,0,.6);
+    height:30px;
+    width:85px;
+    text-align:center;
+    left:0;
+    color:#fff;
+}
+
+.skillbar .percent,.skillbar .title{
+    padding:5px;
+    position:absolute;
+    top:0;
+    z-index:9
+}
+
+.skillbar .percent{
+    right:0;
+    color:#000;
+    font-weight:700
+}
+
+.skillbar .filled{
+    z-index:8;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,80,80,.3);
+    height:100%;
+}

@@ -1,0 +1,89 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.input{
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
+.input-inner{
+    background-color: #c5c8ce;
+    background-image: none;
+    border-radius: 2px;
+    border: 1px solid #DCDFE6;
+    box-sizing: border-box;
+    color: #000000;
+    display: inline-block;
+    font-size: inherit;
+    height: 25px;
+    line-height: 25px;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+.table-default{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table-default, th, td {
+    border: 1px solid #DCDFE6;
+}
+.table-default th{
+    height: 30px;
+    font-size: 16px;
+    font-weight: inherit;
+    color: #000000;
+    background-color: #F8F8F9;
+}
+.table-default td{
+    height: 20px;
+}
+.table-default .select{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #000000;
+    background-color: #F8F8F9;
+}
+
+.form-item{
+    margin-bottom: 8px;
+}
+
+.form-item-label{
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #000000;
+    line-height: 25px;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+}
+
+.form-item-content{
+    position: relative;
+    font-size: 14px;
+}
+.form-item .select{
+    height: 25px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid #DCDFE6;
+}
+.form-item .select option{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #000000;
+}

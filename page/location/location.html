@@ -1,0 +1,69 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-11-04 16:15:33
+ * @FilePath: \Cosmos\page\location\location.html
+ * @LastEditTime: 2023-03-06 13:24:11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="./location.css" />
+</head>
+<body>
+    <div class="box-top">
+        <div class="box" style="margin-top: 20px;">
+            <label class="box-name" style="width: 90px; left:15px;">位置调整</label>
+            <div class="form-item">
+                <label class="form-item-label" style="width: 100px;">X</label>
+                <div class="form-item-content" style="margin-left: 100px;">
+                    <div class="co-input-number">
+                        <span id="co-input-number-decrease-lx" role="button" class="co-input-number-public co-input-number-decrease">-</span>
+                        <span id="co-input-number-increase-lx" role="button" class="co-input-number-public co-input-number-increase">+</span>
+                        <div class="co-input">
+                            <input id="co-input-inner-lx" type="number" autocomplete="off" class="co-input-inner" value="0"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label class="form-item-label" style="width: 100px;">Y</label>
+                <div class="form-item-content" style="margin-left: 100px;">
+                    <div class="co-input-number">
+                        <span id="co-input-number-decrease-ly" role="button" class="co-input-number-public co-input-number-decrease">-</span>
+                        <span id="co-input-number-increase-ly" role="button" class="co-input-number-public co-input-number-increase">+</span>
+                        <div class="co-input">
+                            <input id="co-input-inner-ly" type="number" autocomplete="off" class="co-input-inner" value="0"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label class="form-item-label" style="width: 100px;">Z</label>
+                <div class="form-item-content" style="margin-left: 100px;">
+                    <div class="co-input-number">
+                        <span id="co-input-number-decrease-lz" role="button" class="co-input-number-public co-input-number-decrease">-</span>
+                        <span id="co-input-number-increase-lz" role="button" class="co-input-number-public co-input-number-increase">+</span>
+                        <div class="co-input">
+                            <input id="co-input-inner-lz" type="number" autocomplete="off" class="co-input-inner" value="0"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">取消</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">确定</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./location.js"></script>
+</body>
+</html>

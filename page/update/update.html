@@ -1,0 +1,48 @@
+<!--
+ * @Version: 1.0
+ * @Autor: wangrenhua
+ * @Description: 
+ * @Date: 2021-10-12 08:38:15
+ * @FilePath: \Cosmos\page\update\update.html
+ * @LastEditTime: 2021-10-23 18:05:19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/iconfont/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/public.css" />
+    <link rel="stylesheet" href="./update.css" />
+</head>
+<body>
+    <div class="box-top">
+        <h4><span>存在可用更新 >> </span><span id="path"></span></h4>
+        <ul>
+            <li>
+                <span>更新版本：</span><span id="version"></span>
+            </li>
+            <li>
+                <span>下载大小：</span><span id="size"></span>
+            </li>
+            <li>
+                <span>更新时间：</span><span id="releaseDate"></span>
+            </li>
+            <li>
+                <span>当前状态：</span><span id="state"></span>
+            </li>
+        </ul>
+        <div class="skillbar html" id="progress">
+            <div class="filled" id="fill"></div>
+            <span class="percent" id="value">0%</span>
+        </div>
+    </div>
+    <div class="box-bottom">
+        <button class="btn-default" id="cancel" style="float: right; margin-right: 10px;margin-top: 11px;">关闭</button>
+        <button class="btn-default btn-default-active" id="sure" style="float: right;margin-right: 10px;margin-top: 11px;">下载并安装</button>
+    </div>
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script type="module" src="./update.js"></script>
+</body>
+</html>

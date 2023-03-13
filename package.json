@@ -1,0 +1,87 @@
+{
+  "name": "cosmos",
+  "version": "1.1.0",
+  "description": "Cosmos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "release": "electron-builder build --win -p always"
+  },
+  "build": {
+    "appId": "com.wangrenhua.app",
+    "productName": "Cosmos",
+    "afterSign": "./build/script/afterSign.js",
+    "copyright": "1.1.0",
+    "files":[
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/._*",
+      "!**/{.vscode,.git}",
+      "!**/{LICENSE.md,README.md}"
+    ],
+    "directories": {
+      "output": "./installation_package"
+    },
+    "win": {
+      "icon": "./build/icons/earth.ico",
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./build/icons/earth.ico",
+      "uninstallerIcon": "./build/icons/earth.ico",
+      "installerHeaderIcon": "./build/icons/earth.ico",
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Cosmos",
+      "include": "./build/script/installer.nsh"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "superLan001",
+        "repo": "cosmos",
+        "releaseType": "draft"
+      }
+    ]
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "深蓝[王仁华]",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "asarmor": "^2.0.0",
+    "electron": "^17.4.1",
+    "electron-builder": "^22.14.13",
+    "javascript-obfuscator": "^4.0.0"
+  },
+  "dependencies": {
+    "@tmcw/togeojson": "^4.5.0",
+    "@turf/turf": "^6.5.0",
+    "cesium": "^1.90.0",
+    "clipper-lib": "^6.4.2",
+    "electron-log": "^4.4.1",
+    "electron-store": "^8.0.1",
+    "electron-updater": "^4.3.9",
+    "iconv-lite": "^0.6.3",
+    "jquery": "^3.6.0",
+    "jstree": "^3.3.12",
+    "shapefile": "^0.6.6",
+    "xml2js": "^0.4.23",
+    "xmldom": "^0.6.0"
+  }
+}
